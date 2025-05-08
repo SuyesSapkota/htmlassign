@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form>   
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input id="name" type="text"
+            placeholder="Enter Your Name">
+            <br>
+       
+        <label for="em">Email Address:</label>
+        <input id="em" type="email"
+        placeholder="Enter your Email">
+        <br>
+        <label for="tel">Phone Number:</label>
+        <input id="tel" type="tel"
+        placeholder="Enter your phone no." maxlength="10" minlength="10">
+        <br>
+        <label for="age">Age Group:</label><br>
+        <input type="radio" id="under18" name="age_group" value="under18">
+        <label for="under18">Under 18</label><br>
+        <input type="radio" id="18to30" name="age_group" value="18to30">
+        <label for="18to30">18-30</label><br>
+        <input type="radio" id="30to50" name="age_group" value="30to50">
+        <label for="30to50">30-50</label><br>
+        <input type="radio" id="50plus" name="age_group" value="50plus">
+        <label for="50plus">50+</label>
+        <br>
+        <label for="gender-male">Gender: </label><br>
+        <input id="gender-male" type="radio" name="gender" value="Male"> Male<br>
+        <input id="gender-female" type="radio" name="gender" value="Female"> Female<br>
+        <input id="gender-other" type="radio" name="gender" value="Other"> Other
+        <br>
+        <label for="">Select Your Country:</label>
+        <input list="country" name="country" id="">
+        <datalist id="country"> 
+            <option value="USA">
+            <option value="India">                 
+            <option value="UK">
+            <option value="UAE">
+            <option value="Canada">
+            <option value="Australia">
+            <option value="Germany">
+            </datalist>
+        <br>
+        </fieldset>
+        <br>
+            <label for="">What features do you like the most? </label><br>
+            <input id="" type="checkbox" name="" id="" value="UI"> UI Design
+            <input id="" type="checkbox" name="" id="" value="Content"> Content
+            <input id="" type="checkbox" name="" id="" value="Speed">Speed
+            <input id="" type="checkbox" name="" id="" value="Mobile Friendliness">Mobile Friendliness
+            <br><br>
+
+            <label for="experience">Rate your experience:</label>
+            <select id="experience" name="experience">
+             <option value="excellent">Excellent</option>
+             <option value="good">Good</option>
+             <option value="average">Average</option>
+             <option value="poor">Poor</option>
+            </select><br><br>
+            <label for="">Comments or Suggestions:</label>
+                    <textarea name="" id="" cols="40" rows="5" 
+                placeholder="Enter your comments or suggestions" required
+                minlength="10" maxlength="200"></textarea><br>
+                        <label for="Recommend">Would you recommend our site to others?</label><br>
+                        <input type="radio" id="Yes" name="recommend" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="recommend" value="No">
+                        <label for="No">No</label><br>
+                        <br>
+                        <label for="">Upload a Screenshot:</label>
+                        <input id="" type="file">
+                        <br>
+                        <br>
+                    <labelfor="">Date of Visit</label>
+                    <label for="">Date of Visit</label>
+                     <input id="" type="date" name="date_of_visit">
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </form>
+</body>
+</html>
